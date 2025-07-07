@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Clon3</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="navbar">
+      <nav class="container">
+        <div>
+          <img
+            src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+            width="176"
+            height="44"
+            alt="Link to the Steam Homepage"
+          />
+        </div>
+        <ul>
+          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="store">Store</a></li>
+          <li><a href="#" id="community">Community</a></li>
+          <li><a href="#" id="support">Support</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <video
+        class="hero-video"
+        loop
+        muted
+        autoplay
+        playsinline
+        preload="auto"
+        poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/sale_summer2025/36a01fe4331ab0ca600ff205/page_bg_english.webp?t=1750963512"
+      >
+        <source
+          src="https://cdn.cloudflare.steamstatic.com/steam/clusters/sale_summer2025/36a01fe4331ab0ca600ff205/webm_page_bg_english.webm?t=1750963512"
+          type="video/webm"
+        />
+      </video>
+      <div class="hero-content">
+        <!-- Search Bar -->
+        <div class="hero-content_search-bar">
+          <ul>
+            <li id="your-store">Your Store</li>
+            <li id="new-noteworthy">New & Noteworthy</li>
+            <li id="categories" class="dropdown">
+              Categories
+              <ul class="dropdown-panel">
+                <div class="dropdown-header">Genres</div>
+                <li class="dropdown-item"><a href="#">FPS</a></li>
+                <li class="dropdown-item"><a href="#">Shooter</a></li>
+                <li class="dropdown-item"><a href="#">Multiplayer</a></li>
+                <li class="dropdown-item"><a href="#">Competitive</a></li>
+                <li class="dropdown-item"><a href="#">Action</a></li>
+                <li class="dropdown-item"><a href="#">Team-Based</a></li>
+                <li class="dropdown-item"><a href="#">eSports</a></li>
+                <li class="dropdown-item"><a href="#">Tactical</a></li>
+                <li class="dropdown-item"><a href="#">Adventure</a></li>
+              </ul>
+            </li>
+            <li id="points-shop">Points Shop</li>
+            <li id="news">News</li>
+            <li id="steam-labs">Steam Labs</li>
+          </ul>
+          <div class="search-container">
+            <input class="search-input" type="text" placeholder="Search games..." />
+            <ul class="search-results-list"></ul>
+          </div>
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section>
+      <!-- Carousel -->
+      <div class="carousel">
+        <div class="carousel-item">
+          <img
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/123456/header.jpg?t=1234567890"
+            alt="Featured Game 1"
+          />
+          <h3>Featured Game 1</h3>
+          <p>Discover the latest adventures in this exciting game!</p>
+        </div>
+        <div class="carousel-pagination"></div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>
