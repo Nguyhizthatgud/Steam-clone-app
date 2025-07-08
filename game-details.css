@@ -1,0 +1,131 @@
+/* Game Details Page Background */
+body {
+  background: linear-gradient(135deg, #1a1d23 0%, #2c3440 50%, #1e2328 100%);
+  min-height: 100vh;
+}
+
+.game-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 50px;
+  color: #b5c2cc;
+}
+
+.game-header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.game-image {
+  width: 560px;
+  min-width: min-content;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  color: #66c0f4;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.game-price {
+  font-size: 1.5rem;
+  color: #66c0f4;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.game-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4c6b22 0%, #5c7e10 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #5c7e10 0%, #6a8f00 100%);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #2a2d36;
+  color: #c7d5e0;
+  border: 1px solid #316282;
+}
+
+.btn-secondary:hover {
+  background: #316282;
+  color: white;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.game-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.details-section {
+  background: linear-gradient(135deg, #646b7e 0%, #2a2d36 100%);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.details-section h3 {
+  color: #66c0f4;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.no-info {
+  color: #8a8a8a;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+  }
+
+  .game-image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .game-details-grid {
+    grid-template-columns: 1fr;
+  }
+}

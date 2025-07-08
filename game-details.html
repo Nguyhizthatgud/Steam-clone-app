@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Details - Steam Clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="game-details.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="navbar">
+      <nav class="container">
+        <div>
+          <img
+            src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+            width="176"
+            height="44"
+            alt="Link to the Steam Homepage"
+          />
+        </div>
+        <ul>
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a href="#" id="store">Store</a></li>
+          <li><a href="#" id="community">Community</a></li>
+          <li><a href="#" id="support">Support</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="game-details-container">
+      <div class="game-header">
+        <img id="gameImage" class="game-image" src="" alt="Game Image" />
+        <div class="game-info">
+          <h1 id="gameTitle" class="game-title">Loading...</h1>
+          <div id="gamePrice" class="game-price">$0.00</div>
+          <div id="gameDescription" class="game-description">
+            <span class="no-info">Game description will be loaded here...</span>
+          </div>
+          <div class="action-buttons">
+            <button class="btn btn-primary" onclick="purchaseGame()">Add to Cart</button>
+            <button class="btn btn-secondary" onclick="addToWishlist()">Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-details-grid">
+        <div class="details-section">
+          <h3>Game Details</h3>
+          <div id="gameDetails">
+            <p><strong>Developer:</strong> <span class="gameDev">Not available</span></p>
+            <p><strong>Publisher:</strong> <span class="gamePub">Not available</span></p>
+            <p><strong>Release Date:</strong> <span class="gameRelease">Not available</span></p>
+            <p><strong>Genre:</strong> <span class="gameGenre">Not available</span></p>
+          </div>
+        </div>
+
+        <div class="details-section">
+          <h3>System Requirements</h3>
+          <div id="systemRequirements">
+            <p class="gameSys">System requirements not available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="game-details.js"></script>
+  </body>
+</html>

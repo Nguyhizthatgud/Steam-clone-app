@@ -1,15 +1,11 @@
 # Steam Clone
 
-A Steam-inspired web application built with HTML, CSS, and JavaScript.
+## Overview
 
-## Features
+Game is one of the most popular industries nowadays. With the game being created every minute and relayed through TV, radio, and the internet, the updated news on a game is already old by the next morning. And, that’s why game publishers such as Steam created a website to help the user obtain the most updated information about games at the ease.
 
-- 🎮 Hero section with video background
-- 🔍 Dynamic search functionality with dropdown results
-- 🎯 Categories dropdown with game genres
-- 🎠 Interactive game carousel with pagination
-- 📱 Responsive design
-- 🎨 Steam-like UI/UX design
+So, game lovers of Steam are reading news and info on games at the convenience of their work desktops or mobiles. The traffic of the news online services is rewardingly high. We could run ads and generate a good amount of money. 💰
+A Steam-inspired web application built with HTML, CSS, and JavaScript. User can click any game item in the gallery to see the detail of only that selection's detail (name, tags, description, price, developer...), replacing the current gallery.
 
 ## Technologies Used
 
@@ -20,11 +16,12 @@ A Steam-inspired web application built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-🚀 [View Live Demo](https://yourusername.github.io/steam-clone/)
+🚀 [View Live Demo](https://nguyhizthatgud.github.io/Steam-clone-app/)
 
 ## Getting Started
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/steam-clone.git
    ```
@@ -37,9 +34,12 @@ A Steam-inspired web application built with HTML, CSS, and JavaScript.
 
 ```
 steam-clone/
-├── Steam-clone.html    # Main HTML file
+├── Steam-clone.html   # Main HTML file
 ├── index.css          # Styles and responsive design
 ├── index.js           # JavaScript functionality
+├── game-details.html  # Game details page
+├── game-details.js    # Game details script
+├── game-details.css    # Styles for game details page
 ├── tagapi.js          # Game tags data
 └── README.md          # Project documentation
 ```
@@ -47,27 +47,24 @@ steam-clone/
 ## Features in Detail
 
 ### Search Functionality
-- Real-time search with dropdown results
-- Game name and price display in 2 rows
-- Click outside to close dropdown
 
-### Game Carousel
-- 4-column responsive grid layout
-- Pagination controls
-- Hover effects and animations
-- API integration for similar games
+User can see a list of games from the API in any format (list, gallery, ... )
 
-### Categories Dropdown
-- Hover-activated dropdown
-- Game genres and categories
-- Steam-inspired styling
+User can see the game initial info (image, title, and price ...) in each item
 
-## API Integration
+User can see a Search input box
 
-This project uses the Games Details API for:
-- Fetching similar games
-- Search functionality
-- Real-time game data
+User is able to Search for games by app name
+
+User is able to see the search results
+
+User can see list of all genres (category)
+
+User is able to filter games that match the genre and tag buttons that clicked.
+
+User sees the website with a clean UI design.
+
+User can view the website in an IphoneX screensize
 
 ## Browser Support
 
@@ -86,13 +83,17 @@ This project uses the Games Details API for:
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project only for educational purposes and portfolio use, not intended for commercial. Feel free to use it as a learning resource.
 
 ## Acknowledgments
 
-- Inspired by Steam's design and user experience
-- Uses Games Details API for game data
-- Built as a learning project for modern web development
+Asynchronous javascript by requesting data from API with Fetch.
+
+JS on dom by accessing, creating, and editing HTML elements.
+
+JS basic syntax and fundamentals
+
+Basic HTML & CSS with appropriate tags and attributes; selectors and properties
 
 ---
 
